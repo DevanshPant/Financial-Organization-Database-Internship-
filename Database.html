@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Database</title>
+    <link rel="stylesheet" href="Database.CSS"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Client Database</h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search by name" />
+            </div>
+        </header>
+
+        <div class="pagination">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+            <span id="page-info">Page 1 of 4</span>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Marital Status</th>
+                        <th>Occupation</th>
+                        <th>Age Group</th>
+                        <th>Income Group</th>
+                        <th>SIP</th>
+                        <th>SWP</th>
+                        <th>AUM</th>
+                        <th>Health</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Database.js"></script>
+</body>
+</html>
